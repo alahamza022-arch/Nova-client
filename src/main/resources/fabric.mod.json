@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "nova_client",
+  "version": "${version}",
+  "name": "Nova Client",
+  "description": "Performance-first client with a cosmic UI, zoom, fullbright and one-click FPS presets.",
+  "authors": ["Nova"],
+  "environment": "client",
+  "entrypoints": { "client": ["com.nova.client.NovaClient"] },
+  "mixins": ["nova_client.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
